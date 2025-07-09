@@ -13,7 +13,7 @@ export async function fetchData(endpoint: string) {
           author: "Sarah Johnson",
           date: "Dec 15, 2024",
           readTime: "8 min read",
-          image: "https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          image: "https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=1",
           category: "Nutrition"
         },
         {
@@ -23,7 +23,7 @@ export async function fetchData(endpoint: string) {
           author: "Mike Thompson",
           date: "Dec 12, 2024",
           readTime: "6 min read",
-          image: "https://images.pexels.com/photos/1552242/pexels-photo-1552242.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          image: "https://images.pexels.com/photos/1552242/pexels-photo-1552242.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=1",
           category: "Fitness"
         },
         {
@@ -33,7 +33,7 @@ export async function fetchData(endpoint: string) {
           author: "Dr. Emma Wilson",
           date: "Dec 10, 2024",
           readTime: "10 min read",
-          image: "https://images.pexels.com/photos/3759657/pexels-photo-3759657.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          image: "https://images.pexels.com/photos/3759657/pexels-photo-3759657.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=1",
           category: "Mental Health"
         },
         {
@@ -43,7 +43,7 @@ export async function fetchData(endpoint: string) {
           author: "Lisa Martinez",
           date: "Dec 8, 2024",
           readTime: "7 min read",
-          image: "https://images.pexels.com/photos/1640770/pexels-photo-1640770.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          image: "https://images.pexels.com/photos/1640770/pexels-photo-1640770.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=1",
           category: "Nutrition"
         },
         {
@@ -53,7 +53,7 @@ export async function fetchData(endpoint: string) {
           author: "James Rodriguez",
           date: "Dec 5, 2024",
           readTime: "9 min read",
-          image: "https://images.pexels.com/photos/1431282/pexels-photo-1431282.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          image: "https://images.pexels.com/photos/1431282/pexels-photo-1431282.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=1",
           category: "Coaching"
         },
         {
@@ -63,7 +63,7 @@ export async function fetchData(endpoint: string) {
           author: "Dr. Alex Chen",
           date: "Dec 3, 2024",
           readTime: "8 min read",
-          image: "https://images.pexels.com/photos/3823488/pexels-photo-3823488.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          image: "https://images.pexels.com/photos/3823488/pexels-photo-3823488.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=1",
           category: "Recovery"
         }
       ]
