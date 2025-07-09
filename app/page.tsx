@@ -29,7 +29,7 @@ export default function Page() {
         if (response.data) {
           setBlogs(response.data);
         } else {
-          setError(response.message || response.error || "Please try again later");
+          setError(response.error || "Please try again later");
         }
       } catch (err) {
         setError("Failed to load blogs");
