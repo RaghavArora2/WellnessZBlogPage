@@ -146,4 +146,49 @@ export default function Page() {
               <div className="p-4 md:p-8">
                 <div className="flex items-center justify-between">
                   <div className="flex items-center space-x-2 md:space-x-3">
-                    <div className="w-10 h-10 md:w-12 md:h-12 bg-gradient-to-r from-[var(--accent-1)] to-[var(--
+                    <div className="w-10 h-10 md:w-12 md:h-12 bg-gradient-to-r from-[var(--accent-1)] to-[var(--accent-3)] rounded-full flex items-center justify-center">
+                      <span className="text-xs md:text-sm font-semibold text-white">
+                        {featuredBlog.author.charAt(0)}
+                      </span>
+                    </div>
+                    <div>
+                      <p className="font-semibold text-gray-900 text-sm md:text-base">
+                        {featuredBlog.author}
+                      </p>
+                      <p className="text-xs md:text-sm text-gray-500">{featuredBlog.date}</p>
+                    </div>
+                  </div>
+                  <Link 
+                    href={`/blog/${featuredBlog.id}`}
+                    className="inline-flex items-center bg-[var(--accent-1)] text-white px-4 py-2 md:px-6 md:py-3 rounded-full hover:bg-[var(--accent-3)] transition-colors duration-300 text-sm md:text-base font-semibold group"
+                  >
+                    Read More
+                    <ArrowRight className="w-4 h-4 md:w-5 md:h-5 ml-2 group-hover:translate-x-1 transition-transform duration-300" />
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* Other Articles Grid */}
+        {otherBlogs.length > 0 && (
+          <div className="max-w-6xl mx-auto">
+            <div className="flex items-center justify-between mb-8 md:mb-12">
+              <h2 className="text-2xl md:text-3xl font-bold text-gray-900">Latest Articles</h2>
+              <div className="flex items-center text-[var(--accent-1)] hover:text-[var(--accent-3)] transition-colors cursor-pointer">
+                <span className="text-sm md:text-base font-semibold mr-2">View All</span>
+                <ArrowRight className="w-4 h-4 md:w-5 md:h-5" />
+              </div>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+              {otherBlogs.map((blog) => (
+                <BlogDisplayCard key={blog.id} blog={blog} />
+              ))}
+            </div>
+          </div>
+        )}
+      </header>
+    </div>
+  );
+}
